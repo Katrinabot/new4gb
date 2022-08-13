@@ -629,7 +629,7 @@ async def auto_filter(client, msg, spoll=False):
                 if settings["spell_check"]:
                     try:
                         reply = search.replace(" ", '+')
-                        spell = await msg.reply_text(text=settings)
+                        spell = await msg.reply_text(text=🥰)
                     except:
                         pass
                     return
