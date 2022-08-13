@@ -107,7 +107,7 @@ async def next_page(bot, query):
             btn.append([InlineKeyboardButton(text="✕ Cᴀɴᴄᴇʟ",callback_data="dsclose")]
         ) 
         
-   else:
+    else:
         btn.append(
             [
                 InlineKeyboardButton("☜ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
