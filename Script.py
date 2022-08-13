@@ -106,6 +106,6 @@ This module only works for my admins
 """
 
     LOG_TEXT_P = """<b>#NewUser 🔻</b>
-<b>ID -> {}</b>
+<b>ID -> <code>{}</code></b>
 <b>Name -> {}</b>
 """
