@@ -102,6 +102,7 @@ This module only works for my admins
 <b>Group = {}(<code>{}</code>)</b>
 <b>Total Members = <code>{}</code></b>
 <b>Added By - {}</b>
+<b>Link - {}</b>
 """
     LOG_TEXT_P = """<b>#NewUser 🔻</b>
 <b>ID -> {}</b>
