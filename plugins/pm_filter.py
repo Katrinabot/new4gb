@@ -100,7 +100,7 @@ async def next_page(bot, query):
             [InlineKeyboardButton("☞ Nᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
         if BUTTON:
-            btn.append([InlineKeyboardButton(f"✮ Pᴀɢᴇs {math.ceil(int(offset) / 10) + 1} / {math.celi(total / 10)} ✮", callback_data="pages")]
+            btn.append([InlineKeyboardButton(f"✮ Pᴀɢᴇs {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ✮", callback_data="pages")]
         ) 
         if BUTTON:
             btn.append([InlineKeyboardButton(text="✕ Cᴀɴᴄᴇʟ",callback_data="dsclose")]
