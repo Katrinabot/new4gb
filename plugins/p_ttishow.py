@@ -51,6 +51,7 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
+                        await asyncio.sleep(4)
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
