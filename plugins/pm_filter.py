@@ -426,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⚜ Search", url="https://t.me/Request_Movies_V3")
             InlineKeyboardButton('💜 Movie Group', url='https://t.me/+1n7Yy3HXf71kMWQ1') 
         ], [
-            InlineKeyboardButton ('💝 All Hindi TV Serials 💝', url='https://t.me/+9G0i9G_J5FI0MGE9')
+            InlineKeyboardButton('💝 All Hindi TV Serials 💝', url='https://t.me/+9G0i9G_J5FI0MGE9')
         ], [
             InlineKeyboardButton('💚 Help', callback_data='help'),
             InlineKeyboardButton('🌀 About', callback_data='about')
