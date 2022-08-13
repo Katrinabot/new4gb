@@ -630,7 +630,9 @@ async def auto_filter(client, msg, spoll=False):
                     try:
                         reply = search.replace(" ", '+')
                         spell = await msg.reply_text(text=settings)
-                       return
+                    except:
+                        pass
+                    return
                 else:
                     return
         else:
