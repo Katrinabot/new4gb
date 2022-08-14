@@ -39,4 +39,4 @@ async def verupikkals(bot, message):
         if not done % 20:
             await sts.edit(f"**Broadcast in progress:**\n\n**Total Users** {total_users}\n**Completed:** {done} / {total_users}\n**Success:** {success}\n**Blocked:** {blocked}\n**Deleted:** {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"<b>Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    await sts.edit(f"<b>Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}</b>")
