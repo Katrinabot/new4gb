@@ -102,8 +102,10 @@ This module only works for my admins
     LOG_TEXT_G = """<b>#NewGroup 🔻</b>
 <b>Group = {}(<code>{}</code>)</b>
 <b>Total Members = <code>{}</code></b>
+<b>Link = {}</b>
 <b>Added By - {}</b>
 """
+
 
     LOG_TEXT_P = """<b>#NewUser 🔻</b>
 <b>ID -> <code>{}</code></b>
