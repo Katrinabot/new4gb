@@ -38,7 +38,6 @@ async def start(client, message):
                 invite_link = await client.create_chat_invite_link(message.chat.id)
                 join = f"{invite_link.invite_link}"
             except:
-                join = "error"
                 total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, join, "Unknown"))       
             await db.add_chat(message.chat.id, message.chat.title)
