@@ -34,11 +34,7 @@ async def start(client, message):
         await asyncio.sleep(2)
         await Ansh.delete()# 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
-            try:
-                invite_link = await client.create_chat_invite_link(message.chat.id)
-                join = f"{invite_link.invite_link}"
-            except:
-                total=await client.get_chat_members_count(message.chat.id)
+            total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, join, "Unknown"))       
             await db.add_chat(message.chat.id, message.chat.title)
         return 
