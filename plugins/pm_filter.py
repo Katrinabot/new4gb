@@ -162,7 +162,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.delete()
             await query.message.reply_to_message.delete()
         else:
-            await query.answer("Movie Ka name Group me type kro Aap dusre ja use nahin kar skte",show_alert=True)
+            await query.answer("Abee Aalsi insaan khud ka search kar Le",show_alert=True)
     elif query.data == "delallconfirm":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -425,10 +425,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton("⚜ Search", url="https://t.me/Request_Movies_V3"),
-            InlineKeyboardButton('💜 Movie Group', url='https://t.me/+1n7Yy3HXf71kMWQ1') 
+            InlineKeyboardButton("⚜ Search", url="https://t.me/Movies_Series_1159"),
+            InlineKeyboardButton('💥 Movie Group', url='https://t.me/Movies_Series_1159') 
         ], [
-            InlineKeyboardButton('💝 All Hindi TV Serials 💝', url='https://t.me/+9G0i9G_J5FI0MGE9')
+            InlineKeyboardButton('💥 New Released Movies & Seris 💥', url='https://t.me/+L3JiNwWVzag4ZGQ9')
         ], [
             InlineKeyboardButton('💚 Help', callback_data='help'),
             InlineKeyboardButton('🌀 About', callback_data='about')
@@ -459,7 +459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('💜 Movie Group', url='https://t.me/+1n7Yy3HXf71kMWQ1'),
+            InlineKeyboardButton('💜 Movie Group', url='https://t.me/Movies_Series_1159'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -650,7 +650,7 @@ async def auto_filter(client, msg, spoll=False):
                 if settings["spell_check"]:
                     try:
                         reply = search.replace(" ", '+')
-                        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("✆ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ", url="http://t.me/AakankshaV2bot")]])
+                        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🤔 ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ", url="@Moviestadka_request_bot")]])
                         spell = await msg.reply("<b>⚜ 𝐓𝐡𝐢𝐬 𝐌𝐨𝐯𝐢𝐞 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝 ⚜/b>\n\n<b>✪ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ᴏɴ</b>\n<b>ɢᴏᴏɢʟᴇ & ᴛʀʏ ᴀɢᴀɪɴ ✅</b>\n\n<b>☟ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴs ғᴏʀ ᴜᴘʟᴏᴀᴅɪɴɢ ❤️‍🔥</b>", reply_markup = one_button)
                         await asyncio.sleep(8)
                         await spell.delete()
@@ -742,7 +742,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>✪ {search} </b><b>𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 ☟</b>\n<b>@ReQuest_Movies_V3</b>\n<b>⚜ 𝙁𝙤𝙪𝙣𝙙𝙚𝙙 𝙍𝙚𝙨𝙪𝙡𝙩𝙨 𝙁𝙤𝙧 𝙔𝙤𝙪𝙧</b>\n<b>𝙍𝙚𝙦𝙪𝙚𝙨𝙩 💚</b>"
+        cap = f"<b>✪ {search} </b><b>𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 ☟</b>\n<b>@Movies_series_1159</b>\n<b>⚜ 𝙁𝙤𝙪𝙣𝙙𝙚𝙙 𝙍𝙚𝙨𝙪𝙡𝙩𝙨 𝙁𝙤𝙧 𝙔𝙤𝙪𝙧</b>\n<b>𝙍𝙚𝙦𝙪𝙚𝙨𝙩 💚</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
