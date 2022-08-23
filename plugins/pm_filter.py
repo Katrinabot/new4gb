@@ -428,7 +428,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⚜ Search", url="https://t.me/Movies_Series_1159"),
             InlineKeyboardButton('💥 Movie Group', url='https://t.me/Movies_Series_1159') 
         ], [
-            InlineKeyboardButton('💥 New Released Movies & Seris 💥', url='https://t.me/+l_u431tlUMY2MWE1')
+            InlineKeyboardButton('💥 New Released Movies & Series 💥', url='https://t.me/+l_u431tlUMY2MWE1')
         ], [
             InlineKeyboardButton('💚 Help', callback_data='help'),
             InlineKeyboardButton('🌀 About', callback_data='about')
