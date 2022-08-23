@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/Request_Movies_V3')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/Updatesallmovies')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -45,10 +45,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔅 Add Me To Your Groups 🔅', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton("⚜ Search", url="https://t.me/Request_Movies_V3"),
-            InlineKeyboardButton('💜 Movie Group', url='https://t.me/+1n7Yy3HXf71kMWQ1')
+            InlineKeyboardButton("⚜ Search", url="https://t.me/Movies_Series_1159"),
+            InlineKeyboardButton('💜 Movie Group', url='https://t.me/Movies_Series_1159')
             ],[
-            InlineKeyboardButton('💝 All Hindi TV Serials 💝', url='https://t.me/+9G0i9G_J5FI0MGE9')
+            InlineKeyboardButton('💝 New Released Movies And Series 💝', url='https://t.me/+l_u431tlUMY2MWE1')
             ],[
             InlineKeyboardButton('💚 Help', callback_data='help'),
             InlineKeyboardButton('🌀 About', callback_data='about')
@@ -93,10 +93,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔅 Add Me To Your Groups 🔅', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton("⚜ Search", url="https://t.me/Request_Movies_V3"),
-            InlineKeyboardButton('💜 Movie Group', url='https://t.me/+1n7Yy3HXf71kMWQ1')
+            InlineKeyboardButton("⚜ Search", url="https://t.me/Movies_Series_1159"),
+            InlineKeyboardButton('💜 Movie Group', url='https://t.me/Movies_Series_1159')
             ],[
-            InlineKeyboardButton('💝 All Hindi TV Serials 💝', url='https://t.me/+9G0i9G_J5FI0MGE9')
+            InlineKeyboardButton('💝 New Released Movies and Series 💝', url='https://t.me/+l_u431tlUMY2MWE1')
             ],[
             InlineKeyboardButton('💚 Help', callback_data='help'),
             InlineKeyboardButton('🌀 About', callback_data='about')
